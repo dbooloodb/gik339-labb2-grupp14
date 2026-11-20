@@ -1,0 +1,53 @@
+h2 {
+  text-align: center;
+  color: white;
+}
+
+body {
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+  background-color: rgb(0, 50, 50);
+}
+
+.labbox {
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 1px;
+  margin-top: 75px;
+  padding: 20px;
+  position: absolute;
+  width: 500px;
+  background-color: lightgray;
+}
+
+label {
+  font-weight: bold;
+  width: 120px;
+}
+
+#emptydiv {
+  border-style: solid;
+  border-color: black;
+  border-radius: 3px;
+  border-width: 0.5px;
+  padding: 3px;
+}
+
+#removebutton {
+  margin-bottom: 10px;
+  padding: 2px 15px;
+}
+
+.textfield {
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  margin-bottom: 10px;
+}
+
+.stylebox {
+  display: flex;
+}
