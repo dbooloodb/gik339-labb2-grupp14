@@ -33,6 +33,7 @@ label {
   border-radius: 3px;
   border-width: 0.5px;
   padding: 3px;
+  height: 20px;
 }
 
 #removebutton {
@@ -42,6 +43,7 @@ label {
 
 .textfield {
   margin-bottom: 10px;
+  width: 75%;
 }
 
 .checkbox {
