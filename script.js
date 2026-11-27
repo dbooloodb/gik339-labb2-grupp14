@@ -11,9 +11,10 @@ const divelementusage = document.getElementsByTagName("div");
     För att använda olika funktioner för alla variabler så har getElementById använts
     för knappen eftersom den enbart har ett id. getElementsByClassName användes för checkboxen
     efter som leta efter id redan var upptaget. querySelectorAll hämtar allt med klass namnet
-    .textfield och getElementsByTagName för att hämta alla div:ar, både querySelectorAll och
-    getElementsByTagName hämtar en lista av antigen HTMLCollection eller NodeList som vi sedan
-    måste definiera vilken position (vilket element) i listan vi vill använda.
+    .textfield och getElementsByTagName för att hämta alla div:ar, både querySelectorAll, 
+    getElementsByClassName och getElementsByTagName hämtar en lista av antigen 
+    HTMLCollection(elements) eller NodeList(queryselector) som vi sedan måste definiera 
+    vilken position (vilket element) i listan vi vill använda.
 */
 
 // Uppgift 5 ----------------------------------------------------------------------------------
@@ -26,17 +27,20 @@ function showText(event) {
 }
 
 /*
-    Här är en fuktion som heter showText, den har en paramet som döpts till event.
+    Här är en fuktion som heter showText, den har en parameter som döpts till event.
     Funktionen har en console.log som visar vilket element som används.
-    checkId declareras genom parametern och får ett element id som sedan används i en if-sats.
+    Parametern checkId declareras och får ett element id som sedan används i en if-sats.
     If-satsen kollar om checkId är === med content, om det är det så lägger den till
     parameterns värde i divelementusage[5].
+    Nu används innerHTML, men det skulle kanske vara bättre/säkrare att använda
+    innerText istället.
 */
 
 // Uppgift 6 ----------------------------------------------------------------------------------
 checkboxusage[0].addEventListener("change", () => {
   divelementusage[5].style.backgroundColor = inputfieldusage[0].value;
 });
+
 /*
     Det står elements (alltså med s, flera) när vi hämtar elementet, 
     därför behövs vilken position eller element vi vill ha till exempel [0],
